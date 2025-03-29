@@ -58,12 +58,12 @@ const richestPerson = [
 ];
 
 function App() {
-  const [active, setActive] = useState(0)
+  const [activeTab, setActiveTab] = useState(0)
   return (
     <div className="app">
       <div className="myapp">
-        <TabButton richestPerson={richestPerson} active={active} setActive={setActive}/>
-        <TabContent richestPerson={richestPerson[0]} active={active} setActive={setActive} />
+        <TabButton richestPerson={richestPerson} activeTab={activeTab} setActiveTab={setActiveTab}/>
+        <TabContent richestPerson={richestPerson} activeTab={activeTab} setActiveTab={setActiveTab} />
       </div>
     </div>
   );

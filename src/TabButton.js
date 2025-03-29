@@ -1,19 +1,22 @@
-import React from 'react'
-import './App.css'
+import React from "react";
+import "./App.css";
 
-function TabButton({richestPerson}) {
+function TabButton({ richestPerson, activeTab, setActiveTab }) {
   return (
-    <div className='tab-header'>
-        {richestPerson.map((person, index) => {
-            return (
-                <div key={person.name} className='tab-button'>
-                    {person.name}
-                </div>
-            )
-        })}
+    <div className="tab-header">
+      {richestPerson.map((person, index) => {
+        return (
+          <div
+            key={person.name}
+            className="tab-button"
+            onClick={() => setActiveTab(index)}
+          >
+            {person.name}
+          </div>
+        );
+      })}
     </div>
-  )
+  );
 }
 
-export default TabButton
-
+export default TabButton;
