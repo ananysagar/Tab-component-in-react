@@ -46,6 +46,9 @@ html, body {
 .tab-button:hover {
   background: #828282;
 }
+.active {
+  background: #828282;
+}
 
 /* TabContent CSS*/
 .tab-content {
